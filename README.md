@@ -50,6 +50,11 @@ Configuration is very simple:
 
 You should probably run this script every few minutes, so that your IP is updated as quickly as possible. Add it to your cronjobs and run it regularly, for example every five minutes.
 
+### How to use - alternative with Docker
+`docker compose up`
+
+The docker container includes the cronjob and runs by default every 5 minutes.
+
 ### CLI options
 Just add these Options after the command like `./update.php --quiet`
 

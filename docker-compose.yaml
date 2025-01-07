@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  netcup-dyndns:
+    restart: unless-stopped
+    network_mode: host
+    environment:
+    - SCHEDULE="*/5 * * * *"
+    build:
+      context: .
+      dockerfile: Dockerfile
